@@ -4,3 +4,5 @@ const mainController = require("../controllers/mainController");
 
 router.get("/stats", mainController.getStats);
 router.get("/match", mainController.getMatch);
+
+module.exports = router;

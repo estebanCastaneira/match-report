@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
-import Stats from "./assets/Pages/Stats";
-import Lineup from "./assets/Pages/Lineup";
+import Stats from "./assets/pages/Stats";
+import Lineup from "./assets/pages/Lineup";
 import { Routes, Route } from "react-router-dom";
 import "tailwindcss/tailwind.css";
 import "./App.css";

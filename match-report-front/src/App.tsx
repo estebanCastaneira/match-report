@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Stats from "./assets/Pages/Stats";
+import Lineup from "./assets/Pages/LineUp";
 import { Routes, Route } from "react-router-dom";
 import "tailwindcss/tailwind.css";
 import "./App.css";
@@ -13,6 +14,8 @@ function App(): JSX.Element {
         <div className="mx-2">
           <Routes>
             <Route path="/stats" element={<Stats />} />
+            <Route path="/lineup" element={<Lineup />} />
+            <Route path="/zones" />
           </Routes>
         </div>
       </main>

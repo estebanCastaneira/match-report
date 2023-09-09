@@ -1,6 +1,6 @@
-import Result from "../../components/Result";
+import Results from "../../components/Results";
 function Stats(): JSX.Element {
-  return <Result />;
+  return <Results />;
 }
 
 export default Stats;

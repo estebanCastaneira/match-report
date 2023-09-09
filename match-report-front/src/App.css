@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+span {
+  color: white;
+}
+
+h1 {
+  font-family: SpaceGrotesk;
+}
+
+a {
+  font-family: SpaceGrotesk;
+}

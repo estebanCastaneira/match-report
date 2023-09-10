@@ -2,4 +2,5 @@
 a.active {
   border-bottom-width: 3px;
   padding-bottom: 17px;
+  color: white;
 }

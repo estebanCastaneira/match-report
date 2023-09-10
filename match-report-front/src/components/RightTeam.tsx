@@ -1,4 +1,4 @@
-function TeamAway(): JSX.Element {
+function RightTeam(): JSX.Element {
   return (
     <div className="flex flex-col items-center">
       <img
@@ -12,4 +12,4 @@ function TeamAway(): JSX.Element {
   );
 }
 
-export default TeamAway;
+export default RightTeam;

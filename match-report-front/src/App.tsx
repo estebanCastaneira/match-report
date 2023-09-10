@@ -2,36 +2,11 @@ import Navbar from "./components/Navbar";
 import Stats from "./pages/Stats";
 import Lineup from "./pages/Lineup";
 import { Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import "tailwindcss/tailwind.css";
 import "./App.css";
 import "./assets/styles/fonts.css";
-import { MatchStats } from "../typesStats";
 
-interface MatchDetailsProps {
-  stats: MatchStats;
-}
-function App(): React.FC {
-  const [stats, setStats] = useState<MatchDetailsProps>(); //TODO
-  const [match, setMatch] = useState<object>({});
-
-  useEffect((): void => {
-    const fetchData = async (): Promise<void> => {
-      try {
-        const [getStats, getMatch] = await Promise.all([
-          axios.get(`${import.meta.env.VITE_BACK_URL}/stats`),
-          axios.get(`${import.meta.env.VITE_BACK_URL}/match`),
-        ]);
-        setStats(getStats.data);
-        setMatch(getMatch.data);
-      } catch (error) {
-        console.log("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
+function App(): JSX.Element {
   return (
     <>
       <main className="my-10">
@@ -39,8 +14,8 @@ function App(): React.FC {
         <Navbar />
         <div className="mx-2">
           <Routes>
-            <Route path="/stats" element={<Stats stats={stats} />} />
-            <Route path="/lineup" element={<Lineup match={match} />} />
+            <Route path="/stats" element={<Stats />} />
+            <Route path="/lineup" element={<Lineup />} />
             <Route path="/zones" />
           </Routes>
         </div>

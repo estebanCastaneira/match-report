@@ -1,4 +1,4 @@
-function TeamHome(): JSX.Element {
+function LeftTeam(): JSX.Element {
   return (
     <div className="flex flex-col items-center">
       <img
@@ -12,4 +12,4 @@ function TeamHome(): JSX.Element {
   );
 }
 
-export default TeamHome;
+export default LeftTeam;

@@ -1,11 +1,7 @@
 import Results from "../components/Results";
-import { MatchStats } from "../../typesStats";
 
-type Props = {
-  stats: MatchStats;
-};
-function Stats({ stats }: Props): React.FC {
-  return <Results stats={stats} />;
+function Stats(): JSX.Element {
+  return <Results />;
 }
 
 export default Stats;

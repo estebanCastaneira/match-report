@@ -1,7 +1,7 @@
 {
   "name": "match-report-back",
   "version": "1.0.0",
-  "description": "an assignment interview for Metasoccer",
+  "description": "an interview assignment for Metasoccer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

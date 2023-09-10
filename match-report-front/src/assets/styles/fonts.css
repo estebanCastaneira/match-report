@@ -1,31 +1,30 @@
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../fonts/SpaceGrotesk-Light.ttf');
-    font-weight: 300;
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-Light.ttf");
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../fonts/SpaceGrotesk-Regular.ttf');
-    font-weight: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.ttf");
+  font-weight: normal;
 }
 @font-face {
-  font-family: 'SpaceGrotesk';
-  src: url('../fonts/SpaceGrotesk-Medium.ttf');
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../fonts/SpaceGrotesk-SemiBold.ttf');
-    font-weight: 600;
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-SemiBold.ttf");
+  font-weight: 600;
 }
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../fonts/SpaceGrotesk-Bold.ttf');
-    font-weight: 800;
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-Bold.ttf");
+  font-weight: 800;
 }
 @font-face {
-    font-family: 'CondStd-Bold';
-    src: url('../fonts/PFDINTextCondStd-Bold.ttf');
+  font-family: "CondStd-Bold";
+  src: url("../fonts/PFDINTextCondStd-Bold.ttf");
 }
-

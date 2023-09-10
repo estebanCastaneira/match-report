@@ -7,12 +7,16 @@ import axios from "axios";
 import "tailwindcss/tailwind.css";
 import "./App.css";
 import "./assets/styles/fonts.css";
+import { MatchStats } from "../typesStats";
 
-function App(): JSX.Element {
-  const [stats, setStats] = useState();
-  const [match, setMatch] = useState();
+interface MatchDetailsProps {
+  stats: MatchStats;
+}
+function App(): React.FC {
+  const [stats, setStats] = useState<MatchDetailsProps>(); //TODO
+  const [match, setMatch] = useState<object>({});
 
-  useEffect(() => {
+  useEffect((): void => {
     const fetchData = async (): Promise<void> => {
       try {
         const [getStats, getMatch] = await Promise.all([

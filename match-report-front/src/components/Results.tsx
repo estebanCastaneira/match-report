@@ -3,8 +3,12 @@ import TeamHome from "./TeamHome";
 import TeamAway from "./TeamAway";
 import Stat from "./Stat";
 import Attack from "./Attack";
-
-function Results(): JSX.Element {
+import { MatchStats } from "../../typesStats";
+type Props = {
+  stats: MatchStats;
+};
+function Results({ stats }: Props): React.FC {
+  console.log(stats);
   return (
     <div className="mx-4 md:mx-0">
       <div className="flex justify-around border-b py-4  border-b-neutral-900 md:justify-center md:gap-7 md:mx-auto">

@@ -1,9 +1,9 @@
-import "../assets/styles/navbar.css";
 import { NavLink } from "react-router-dom";
+import "../assets/styles/navbar.css";
 
 function Navbar(): JSX.Element {
   return (
-    <nav className="my-navbar flex justify-around pt-4 pb-0 border-y border-neutral-900 md:justify-center md:gap-10">
+    <nav className="my-navbar flex justify-around py-4 pb-0 border-y border-neutral-900 md:justify-center md:gap-10">
       <NavLink className="text- uppercase" to="/stats">
         Stats
       </NavLink>

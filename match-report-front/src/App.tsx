@@ -14,7 +14,7 @@ function App(): JSX.Element {
         <Navbar />
         <div className="mx-2">
           <Routes>
-            <Route path="/stats" element={<Stats />} />
+            <Route path="/" element={<Stats />} />
             <Route path="/lineup" element={<Lineup />} />
             <Route path="/zones" />
           </Routes>

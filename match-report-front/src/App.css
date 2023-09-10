@@ -32,3 +32,13 @@ a {
 p {
   font-family: SpaceGrotesk;
 }
+
+.p-05 {
+  padding: 2px 3.5px;
+}
+.border-1 {
+  border-width: 1.5px;
+}
+.text-2xs {
+  font-size: 12px;
+}

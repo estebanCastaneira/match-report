@@ -7,7 +7,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function Results(): JSX.Element {
-  const [stats, setStats] = useState(); //TODO
+  const [stats, setStats] = useState();
 
   useEffect((): void => {
     const fetchData = async (): Promise<void> => {

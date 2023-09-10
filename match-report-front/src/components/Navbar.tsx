@@ -1,16 +1,18 @@
-import { Link } from "react-router-dom";
+import "../assets/styles/navbar.css";
+import { NavLink } from "react-router-dom";
+
 function Navbar(): JSX.Element {
   return (
-    <nav className="flex justify-around py-4 border-y border-neutral-900">
-      <Link className="text-white uppercase" to="/stats">
+    <nav className="my-navbar flex justify-around pt-4 pb-0 border-y border-neutral-900 md:justify-center md:gap-10">
+      <NavLink className="text-white uppercase" to="/stats">
         Stats
-      </Link>
-      <Link className="text-white uppercase" to="/lineup">
+      </NavLink>
+      <NavLink className="text-white uppercase" to="/lineup">
         Lineup
-      </Link>
-      <Link className="text-white uppercase" to="#">
+      </NavLink>
+      <NavLink className="text-white uppercase md:hidden" to="#">
         Zones
-      </Link>
+      </NavLink>
     </nav>
   );
 }

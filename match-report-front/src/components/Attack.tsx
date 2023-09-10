@@ -1,6 +1,4 @@
-import "../assets/styles/stats.css";
-
-function Stat(): JSX.Element {
+function Attack(): JSX.Element {
   return (
     <div className="w-full">
       <div className="flex justify-between items-center mb-3">
@@ -18,4 +16,4 @@ function Stat(): JSX.Element {
   );
 }
 
-export default Stat;
+export default Attack;

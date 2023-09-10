@@ -1,5 +1,5 @@
 import fooball from "../assets/icons/football.svg";
-function Player(): JSX.Element {
+function Player({ name, number, condition, rating, didScore }): JSX.Element {
   return (
     <tbody>
       <tr className="font-bold">

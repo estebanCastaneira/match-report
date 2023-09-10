@@ -10,6 +10,7 @@ import createStats from "../functions/createStats";
 function Results(): JSX.Element {
   const [stats, setStats] = useState();
   const [score, setScore] = useState();
+  const [attackFlanks, setAttackFlanks] = useState();
 
   useEffect((): void => {
     const fetchData = async (): Promise<void> => {
@@ -31,7 +32,6 @@ function Results(): JSX.Element {
 
     fetchData();
   }, []);
-
   return (
     stats && (
       <div className="mx-4 md:mx-0">
@@ -40,12 +40,14 @@ function Results(): JSX.Element {
           <Score score={score} />
           <RightTeam />
         </div>
-        <div className="mt-5 mx-5 md:mx-0 md:flex md:justify-between md:px-6 md:gap-20">
-          {/* {stats.map((stat, i) => (
-            <Stat key={i} stat={stat} />
-          ))} */}
+        <div className="mt-5 mx-5 md:mx-0 md:flex md:justify-between md:px-6 md:gap-20 flex-col-2 flex-row-reverse">
           <div className="hidden md:block w-full">
-            <Attack />
+            <Attack stats={stats} />
+          </div>
+          <div className="w-full">
+            {stats.statsArr.map((stat, i) => (
+              <Stat key={i} stat={stat} />
+            ))}
           </div>
         </div>
       </div>

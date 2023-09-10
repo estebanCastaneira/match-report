@@ -1,5 +1,5 @@
 function createStats(stats) {
-  const statsObj = [];
+  const statsArr = [];
   const allStats = stats.leftTeam;
   const rightTeamStast = stats.rightTeam;
   delete allStats.goals;
@@ -13,9 +13,10 @@ function createStats(stats) {
     obj.statName = statName;
     obj.leftTeam = allStats[stat];
     obj.rightTeam = rightTeamStast[stat];
-    statsObj.push(obj);
+    statsArr.push(obj);
   }
-  return statsObj;
+  const attackZones = statsArr.pop();
+  return { statsArr, attackZones };
 }
 
 export default createStats;

@@ -9,8 +9,8 @@ import "./assets/styles/fonts.css";
 function App(): JSX.Element {
   return (
     <>
-      <main className="my-10">
-        <h1 className="mx-2 font-light my-5">Match Report</h1>
+      <main className="my-10  mx-auto max-w-4xl">
+        <h1 className="m-5 font-light">Match Report</h1>
         <Navbar />
         <div className="mx-2">
           <Routes>

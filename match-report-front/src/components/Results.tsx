@@ -41,9 +41,9 @@ function Results(): JSX.Element {
           <RightTeam />
         </div>
         <div className="mt-5 mx-5 md:mx-0 md:flex md:justify-between md:px-6 md:gap-20">
-          {stats.map((stat, i) => (
+          {/* {stats.map((stat, i) => (
             <Stat key={i} stat={stat} />
-          ))}
+          ))} */}
           <div className="hidden md:block w-full">
             <Attack />
           </div>

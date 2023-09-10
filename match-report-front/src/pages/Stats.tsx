@@ -1,4 +1,5 @@
-import Results from "../../components/Results";
+import Results from "../components/Results";
+
 function Stats(): JSX.Element {
   return <Results />;
 }

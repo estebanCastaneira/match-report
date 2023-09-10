@@ -8,7 +8,7 @@ import "tailwindcss/tailwind.css";
 import "./App.css";
 import "./assets/styles/fonts.css";
 
-function App(): React.FC {
+function App(): JSX.Element {
   const [stats, setStats] = useState();
   const [match, setMatch] = useState();
 

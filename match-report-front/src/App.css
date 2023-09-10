@@ -19,7 +19,11 @@ span {
   color: white;
 }
 
-h1 {
+h1,
+h4,
+a,
+p,
+thead {
   font-family: SpaceGrotesk;
 }
 h4 {

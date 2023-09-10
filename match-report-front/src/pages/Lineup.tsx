@@ -20,16 +20,18 @@ function Lineup(): JSX.Element {
   }, []);
 
   return (
-    <div className="md:flex justify-center">
-      <div className="mx-2 my-3">
-        <LineupHeader teamInfo={match} team={"left"} />
-        <LineupList />;
+    match && (
+      <div className="md:flex justify-center">
+        <div className="mx-2 my-3">
+          <LineupHeader teamInfo={match} team={"left"} />
+          <LineupList teamInfo={match} team={"left"} />;
+        </div>
+        <div className="mx-2 my-3">
+          <LineupHeader teamInfo={match} team={"right"} />
+          <LineupList teamInfo={match} team={"right"} />;
+        </div>
       </div>
-      <div className="mx-2 my-3">
-        <LineupHeader teamInfo={match} team={"right"} />
-        <LineupList />;
-      </div>
-    </div>
+    )
   );
 }
 

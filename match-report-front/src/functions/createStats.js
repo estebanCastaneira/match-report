@@ -1,9 +1,9 @@
 function createStats(stats) {
   const statsArr = [];
   const allStats = stats.leftTeam;
-  const rightTeamStast = stats.rightTeam;
+  const rightTeamStats = stats.rightTeam;
   delete allStats.goals;
-  delete rightTeamStast.goals;
+  delete rightTeamStats.goals;
   for (const stat in allStats) {
     const obj = {};
     const statName = stat
@@ -12,7 +12,7 @@ function createStats(stats) {
       .join(" ");
     obj.statName = statName;
     obj.leftTeam = allStats[stat];
-    obj.rightTeam = rightTeamStast[stat];
+    obj.rightTeam = rightTeamStats[stat];
     statsArr.push(obj);
   }
   const attackZones = statsArr.pop();

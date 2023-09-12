@@ -46,3 +46,6 @@ p {
 .text-2xs {
   font-size: 12px;
 }
+.condstd-bold {
+  font-family: CondStd-Bold;
+}

@@ -33,16 +33,18 @@ function Zones(): JSX.Element {
   return (
     stats &&
     score && (
-      <div className="flex flex-col justify-center items-center">
-        <div className="flex justify-around border-b py-4  border-b-neutral-900 md:justify-center md:gap-7 md:mx-auto">
+      <div className="flexw-2/3">
+        <div className="flex justify-evenly border-b-neutral-900 items-start my-5">
           <LeftTeam />
           <Score score={score} />
           <RightTeam />
         </div>
-        <h1 className="text-xs text-neutral-500 uppercase my-5">
-          Attack Zones
-        </h1>
-        <Attack stats={stats} />
+        <div className="flex flex-col items-center">
+          <h2 className="text-xs text-neutral-500 uppercase my-5">
+            Attack Zones
+          </h2>
+          <Attack stats={stats} />
+        </div>
       </div>
     )
   );

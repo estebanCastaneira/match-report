@@ -24,13 +24,15 @@ function LineupList({ teamInfo, team }): JSX.Element {
             </th>
           </tr>
         </thead>
-        {team === "left"
-          ? teamInfo.leftLineup.map((player) => (
-              <Player key={player.id} player={player} />
-            ))
-          : teamInfo.rightLineup.map((player) => (
-              <Player key={player.id} player={player} />
-            ))}
+        <tbody>
+          {team === "left"
+            ? teamInfo.leftLineup.map((player) => (
+                <Player key={player.id} player={player} />
+              ))
+            : teamInfo.rightLineup.map((player) => (
+                <Player key={player.id} player={player} />
+              ))}
+        </tbody>
       </table>
     </div>
   );

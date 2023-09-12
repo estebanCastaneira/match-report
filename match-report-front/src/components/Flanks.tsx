@@ -7,7 +7,7 @@ function Flanks({ percentage }): JSX.Element {
         className="bar flex items-end justify-center"
         style={{ height: `${percentage * 100}%` }}
       >
-        <img src={arrow} alt="arrow" className="absolute -top-[22px]" />
+        <img src={arrow} alt="arrow" className="absolute -top-[22px] w-full" />
         <p className="text-black">{Math.round(percentage * 100)}%</p>
       </div>
     </>

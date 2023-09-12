@@ -10,7 +10,6 @@ import createStats from "../functions/createStats";
 function Results(): JSX.Element {
   const [stats, setStats] = useState();
   const [score, setScore] = useState();
-  const [attackFlanks, setAttackFlanks] = useState();
 
   useEffect((): void => {
     const fetchData = async (): Promise<void> => {

@@ -21,7 +21,7 @@ function Lineup(): JSX.Element {
 
   return (
     match && (
-      <div className="md:flex md:ml-6 justify-center md:gap-6">
+      <div className="md:flex md:ml-6 md:justify-center md:gap-6">
         <div className="my-3">
           <LineupHeader teamInfo={match} team={"left"} />
           <LineupList teamInfo={match} team={"left"} />;

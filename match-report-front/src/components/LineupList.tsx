@@ -1,26 +1,29 @@
 import Player from "./Player";
-import condition from "../assets/icons/condition.png";
+import condition from "../assets/icons/condition.svg";
 
 function LineupList({ teamInfo, team }): JSX.Element {
   return (
-    <div className="relative overflow-x-auto">
-      <table className="w-full text-left border border-neutral-900 text-white">
+    <div className="">
+      <table className="w-full border border-neutral-900 text-white">
         <thead className="bg-neutral-900">
           <tr className="border border-neutral-800">
-            <th scope="col" className="px-6 py-3 border-r border-neutral-800">
-              <p className="font-light">Lineup</p>
-            </th>
-            <th scope="col" className="px-6 py-3 border-r border-neutral-800">
-              <p className="font-light">Player</p>
+            <th scope="col" className="px-2 py-2 border-r border-neutral-800">
+              <p className="text-sm font-light">Lineup</p>
             </th>
             <th
               scope="col"
-              className="px-6 py-3 border-r border-neutral-800 flex items-center justify-center"
+              className="px-2 py-2 border-r border-neutral-800 w-5/12"
+            >
+              <p className="text-sm text-left font-light">Player</p>
+            </th>
+            <th
+              scope="col"
+              className="text-sm px-2 py-2 border-r border-neutral-800 flex justify-center"
             >
               <img src={condition} alt="Player condition icon" />
             </th>
-            <th scope="col" className="px-6 py-3">
-              <p className="font-light">Rating</p>
+            <th scope="col" className="px-2 py-2">
+              <p className="text-sm font-light">Rating</p>
             </th>
           </tr>
         </thead>

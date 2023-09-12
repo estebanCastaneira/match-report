@@ -1,4 +1,4 @@
-import training from "../assets/icons/training-icon.png";
+import training from "../assets/icons/training-icon.svg";
 
 function Score({ score }): JSX.Element {
   const result = (score) => {

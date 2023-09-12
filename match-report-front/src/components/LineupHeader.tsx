@@ -1,4 +1,8 @@
 function LineupHeader({ teamInfo, team }): JSX.Element {
+  const link =
+    team === "left"
+      ? "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Escudo_del_Club_Nacional_de_Football.svg/600px-Escudo_del_Club_Nacional_de_Football.svg.png"
+      : "https://upload.wikimedia.org/wikipedia/commons/f/f1/Escudo_de_Rampla_Juniors.png";
   return (
     teamInfo && (
       <div className="bg-neutral-900 p-2 ">
@@ -7,8 +11,8 @@ function LineupHeader({ teamInfo, team }): JSX.Element {
             <img
               width={30}
               height={30}
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Escudo_del_Club_Nacional_de_Football.svg/600px-Escudo_del_Club_Nacional_de_Football.svg.png"
-              alt="Left Team 1 Avatar"
+              src={link}
+              alt={`${team} team avatar`}
             />
             <p className="ml-2 font-medium text-lg">
               {team === "left"

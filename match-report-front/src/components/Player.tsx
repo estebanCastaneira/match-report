@@ -6,17 +6,20 @@ function Player({ player }): JSX.Element {
     CenterBack: "CB",
     RightBack: "RB",
     LeftMidfielder: "LM",
+    CentralDefensiveMidfielder: "CDM",
     CenterMidfielder: "CM",
+    CentralAttackingMidfielder: "CAM",
     RightMidfielder: "RM",
     LeftForward: "LF",
+    Striker: "ST",
     CenterForward: "CF",
     RightForward: "RF",
   };
+
   const playerPosition = player.position
     .split("")
     .filter((char) => char !== " ")
     .join("");
-
   return (
     <tbody>
       <tr className="font-bold">

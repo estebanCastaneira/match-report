@@ -40,9 +40,6 @@ function Zones(): JSX.Element {
           <RightTeam />
         </div>
         <div className="flex flex-col items-center">
-          <h2 className="text-xs text-neutral-500 uppercase my-5">
-            Attack Zones
-          </h2>
           <Attack stats={stats} />
         </div>
       </div>

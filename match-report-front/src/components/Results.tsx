@@ -41,9 +41,6 @@ function Results(): JSX.Element {
         </div>
         <div className="mt-5 mx-5 md:mx-0 md:flex md:justify-between md:px-6 md:gap-20 flex-col-2 flex-row-reverse">
           <div className="hidden md:block w-full">
-            <h2 className="text-xs text-center text-neutral-500 uppercase my-5">
-              Attack Zones
-            </h2>
             <Attack stats={stats} />
           </div>
           <div className="w-full">

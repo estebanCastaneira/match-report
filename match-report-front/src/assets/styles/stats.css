@@ -12,9 +12,9 @@
 }
 
 .bar {
-  width: 92px;
+  width: 100px;
   height: 100%;
-  background-color: rgb(61, 114, 253, 0.8);
+  background-color: #3d72fdcc;
   text-align: center;
   position: relative;
 }
